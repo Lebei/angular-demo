@@ -1,0 +1,26 @@
+.preview-label {
+  width: 100px;
+  height:100px;
+  border:1px dotted #ccc;
+  position: relative;
+  vertical-align: top;
+  margin: 20px;
+}
+.preview-label>input {
+  display: none;
+}
+.preview-label .uploadimgicon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 25px;
+  cursor: pointer;
+}
+.preview-label .uploadimgremove {
+  position: absolute;
+  top:5px;
+  right:5px;
+  cursor: pointer;
+}
+

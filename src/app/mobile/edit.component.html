@@ -1,0 +1,276 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container tc">
+    修改编辑
+  </div>
+</nav>
+<div class="container-fluid wrap" *ngIf="foodInfo">
+  <div class="row title"><i class="icon"></i>概要信息</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>任务类别：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.missionType">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>任务来源：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.missionResource">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>概要信息</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>单位名称：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.beSampleEnt">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>单位地址：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.entAddress">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>行政区划：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.location">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>区域类型：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.regionType">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>法定代表人：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.entLeader">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>年销售额（万元）：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sales">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>营业执照：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.license">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>许可证号：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.licence">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>联系人：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.entLinkMan">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>电话：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.entPhone">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>传真：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.entFax">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>邮编：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.entPostCode">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>抽样地点</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-12 form-group">
+      <label>生产环节：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.annualRing">
+    </div>
+    <div class="col-xs-12 form-group">
+      <label>流通环节：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.circulation">
+    </div>
+    <div class="col-xs-12 form-group">
+      <label>餐饮环节：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.catrringLink">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>样品信息</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>产地：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.place">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品来源：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sampleResource">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品属性：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sampleProperty">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品分类：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.classify">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>包装分类：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.packageGroup">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品类型：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sampleType">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品类型-其他：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.samtInfo">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品名称：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.product">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>商标：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.brand">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样日期：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.stageDate">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样日期类型：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sampleStage">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品日期：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sampleDate">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>规格型号：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.type">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品批号：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.batch">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>保质期：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.warranty">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>执行标准/技术文件：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.gb">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>质量等级：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.grade">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>生产许可证编号：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.qs">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>单价(元)：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.unitPrice">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>是否出口：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.exit">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样基数/批量：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.base">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样数量：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sampleNum">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>备样数量：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.reserveNum">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品形态：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sampleForm">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>（标示）生产者信息</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>生产者名称：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.productOrg">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>生产者地址：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.productAddress">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>生产者联系人：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.productLinkMan">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>联系电话：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.productPhone">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>抽检时样品的存储条件</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>样品存储条件：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.storageCondition">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>温度(℃)：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.temperature">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>寄送样品截止日期：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.deadLine">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>寄送样品地址：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sendAddress">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>抽检样品包装</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>样品包装方式：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.packager">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样方式：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sampleMold">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>其他</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-12 form-group">
+      <label>抽样人姓名：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="foodInfo.sampleMan">
+    </div>
+    <div class="col-xs-12 form-group">
+      <label>备注：</label>
+      <textarea class="form-control input-text area" [(ngModel)]="foodInfo.remark"></textarea>
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>现场图</div>
+  <div class="row">
+    <div class="col-xs-3 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVlMmQyMjAxNTMgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWUyZDIyMDE1MyI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+      </a>
+      <p class="tc">图一</p>
+    </div>
+    <div class="col-xs-3 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVlMmQyMWRkMzggdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWUyZDIxZGQzOCI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+      </a>
+      <p class="tc">图二</p>
+    </div>
+    <div class="col-xs-3 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVlMmQyMWI2Y2IgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWUyZDIxYjZjYiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+      </a>
+      <p class="tc">图三</p>
+    </div>
+    <div class="col-xs-3 col-md-3">
+      <a href="#" class="thumbnail">
+        <img data-src="holder.js/100%x180" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVlMmQyMjE0YjMgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWUyZDIyMTRiMyI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+      </a>
+      <p class="tc">图四</p>
+    </div>
+    <a href="" class="upload">点击上传更多图片</a>
+  </div>
+  <div class="row tc">
+    <button class="btn btn-primary btn-sm" (click)="goBack()">返回</button>
+    <button class="btn btn-success btn-sm" (click)="save()">提交</button>
+    <button class="btn btn-warning btn-sm">临时保存</button>
+  </div>
+</div>

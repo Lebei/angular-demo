@@ -1,0 +1,259 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container tc">
+    新增采样
+  </div>
+</nav>
+<form #addForm="ngForm" (ngSubmit)="onSubmit(addForm.value)">
+<div class="container-fluid wrap">
+  <div class="row title"><i class="icon"></i>概要信息</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>任务类别：</label>
+      <select class="form-control input-text" [(ngModel)]="missionType" name="missionType">
+        <option value="0">--请选择--</option>
+        <option value="监督抽检">监督抽检</option>
+        <option value="风险监测">风险监测</option>
+      </select>
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>任务来源：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="missionResource" name="missionResource">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>概要信息</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>单位名称：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="beSampleEnt" name="beSampleEnt">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>单位地址：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="entAddress" name="entAddress">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>行政区划：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="location" name="location">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>区域类型：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="regionType" name="regionType">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>法定代表人：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="entLeader" name="entLeader">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>年销售额（万元）：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sales" name="sales">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>营业执照：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="license" name="license">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>许可证号：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="licence" name="licence">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>联系人：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="entLinkMan" name="entLinkMan">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>电话：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="entPhone" name="entPhone">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>传真：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="entFax" name="entFax">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>邮编：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="entPostCode" name="entPostCode">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>抽样地点</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-12 form-group">
+      <label>生产环节：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="annualRing" name="annualRing">
+    </div>
+    <div class="col-xs-12 form-group">
+      <label>流通环节：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="circulation" name="circulation">
+    </div>
+    <div class="col-xs-12 form-group">
+      <label>餐饮环节：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="catrringLink" name="catrringLink">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>样品信息</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>产地：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="place" name="place">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品来源：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sampleResource" name="sampleResource">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品属性：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sampleProperty" name="sampleProperty">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品分类：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="classify" name="classify">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>包装分类：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="packageGroup" name="packageGroup">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品类型：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sampleType" name="sampleType">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品类型-其他：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="samtInfo" name="samtInfo">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品名称：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="product" name="product">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>商标：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="brand" name="brand">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样日期：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="stageDate" name="stageDate">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样日期类型：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sampleStage" name="sampleStage">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品日期：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sampleDate" name="sampleDate">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>规格型号：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="type" name="type">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品批号：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="batch" name="batch">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>保质期：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="warranty" name="warranty">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>执行标准/技术文件：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="gb" name="gb">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>质量等级：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="grade" name="grade">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>生产许可证编号：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="qs" name="qs">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>单价(元)：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="unitPrice" name="unitPrice">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>是否出口：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="exit" name="exit">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样基数/批量：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="base" name="base">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样数量：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sampleNum" name="sampleNum">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>备样数量：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="reserveNum" name="reserveNum">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>样品形态：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sampleForm" name="sampleForm">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>（标示）生产者信息</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>生产者名称：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="productOrg" name="productOrg">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>生产者地址：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="productAddress" name="productAddress">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>生产者联系人：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="productLinkMan" name="productLinkMan">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>联系电话：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="productPhone" name="productPhone">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>抽检时样品的存储条件</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>样品存储条件：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="storageCondition" name="storageCondition">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>温度(℃)：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="temperature" name="temperature">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>寄送样品截止日期：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="deadLine" name="deadLine">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>寄送样品地址：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sendAddress" name="sendAddress">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>抽检样品包装</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-6 form-group">
+      <label>样品包装方式：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="packager" name="packager">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>抽样方式：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sampleMold" name="sampleMold">
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>其他</div>
+  <div class="row form-group-sm">
+    <div class="col-xs-12 form-group">
+      <label>抽样人姓名：</label>
+      <input type="text" class="form-control input-text" [(ngModel)]="sampleMan" name="sampleMan">
+    </div>
+    <div class="col-xs-12 form-group">
+      <label>备注：</label>
+      <textarea class="form-control input-text area" [(ngModel)]="remark" name="remark"></textarea>
+    </div>
+  </div>
+  <div class="row title"><i class="icon"></i>现场图</div>
+  <div class="row">
+    <!--<a href="" class="upload">点击上传更多图片</a>-->
+    <app-previewimg  [(previewImgFile)]="previewImgFile"></app-previewimg>
+  </div>
+  <div class="row tc">
+    <button class="btn btn-primary btn-sm" (click)="goBack()">返回</button>
+    <button class="btn btn-success btn-sm" type="submit">提交</button>
+    <button class="btn btn-warning btn-sm">临时保存</button>
+  </div>
+</div>
+</form>

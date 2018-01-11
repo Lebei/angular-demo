@@ -1,0 +1,22 @@
+
+<div class="bg">
+<div class="container">
+
+  <form class="form-signin" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)">
+    <h3 class="form-signin-heading"><img src="../../assets/image/logo.png" alt="" width="50" class="img">苏州市食品安全检测联盟数据共享平台</h3>
+    <h4>（食品安全法检子系统）</h4>
+    <input class="form-control mt20" placeholder="用户名" #usernameRef type="text" name="username" #userName="ngModel" required pattern="^[a-zA-Z][a-zA-Z0-9]*"  minlength="6" maxlength="16" [(ngModel)]="username">
+    <div *ngIf="!userName.pristine&&userName.invalid||userName.touched&&userName.invalid"
+         class="alert alert-danger">
+      用户名由英文字母和数字组成的6-16位字符,以字母开头
+    </div>
+    <input class="form-control mt20" placeholder="密   码" #passwordRef type="password" name="password" required minlength="6" [(ngModel)]="password" #userpwd="ngModel">
+    <div *ngIf="!userpwd.pristine&&userpwd.invalid||userpwd.touched&&userpwd.invalid"
+         class="alert alert-danger">
+      密码至少6个字符
+    </div>
+    <button class="btn btn-primary btn-block login" type="submit" [disabled]="!loginForm.form.valid" (click)="login(usernameRef.value, passwordRef.value)" routerLink="/mobile/list" routerLinkActive="active">登录</button>
+  </form>
+</div>
+</div>
+<!--(click)="login(usernameRef.value, passwordRef.value)"-->

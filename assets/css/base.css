@@ -1,0 +1,27 @@
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+.mt20{margin-top: 20px;}
+.bg{background: url(../image/bg.png) no-repeat top center;min-height: 768px;}
+.form-signin{max-width: 500px;margin: 200px auto 0;}
+.form-signin h3,.form-signin h4{color: #fff;text-align: center;}
+.container img{margin-right: 10px;}
+.form-signin h4{margin-bottom: 50px;}
+.form-signin .login{max-width: 150px;margin: 20px auto;}
+.tr{text-align: right;}
+.fl{float: left;}
+.fr{float: right;}
+.tc{text-align: center;}
+.navbar-fixed-top{background: #1080e6;color: #fff;font-size: 22px;min-height: 70px;line-height: 70px;}
+.navbar-fixed-bottom{color: #fff;min-height: 40px;line-height: 40px;text-align: center;background: #434343;}
+.container-fluid{padding-top: 70px;padding-bottom: 30px;}
+.bg-color{background: #eaeff2;}
+.input-text{width: 200px;display: inline-block;}
+.row{margin-bottom: 15px;}
+.row label{width: 135px;text-align: right;}
+.title{height: 45px;line-height: 45px;background: #e2edfa;color: #0159c5;font-family: 黑体;font-size: 24px;adding-left: 20px;}
+.icon{display: inline-block;width: 16px;height: 16px;background: url("../image/title.png") no-repeat;margin: 0 20px;}
+input[type=checkbox]{vertical-align: middle;margin: 0 5px;}
+.area{width: 580px;}
+.upload{margin-left: 30px;}
+.form-group-sm .form-control{font-size: 14px;}
